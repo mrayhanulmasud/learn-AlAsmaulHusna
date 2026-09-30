@@ -1,0 +1,12 @@
+{
+  "name": "আসমাউল হুসনা — আল্লাহর ৯৯টি নাম",
+  "short_name": "আসমাউল হুসনা",
+  "description": "প্রতিদিন ৩টি করে আল্লাহর ৯৯টি সুন্দর নাম শিখুন",
+  "lang": "bn",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#062820",
+  "theme_color": "#062820",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

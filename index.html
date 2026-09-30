@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="bn" data-font="scheherazade">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>আসমাউল হুসনা · আল্লাহর ৯৯টি নাম শিখুন</title>
+  <meta name="description" content="ফ্ল্যাশকার্ড, কুইজ ও পুনরাবৃত্তির মাধ্যমে প্রতিদিন ৩টি করে আল্লাহর ৯৯টি সুন্দর নাম মুখস্থ করুন — বাংলা উচ্চারণ, বাংলা ও ইংরেজি অর্থসহ।" />
+  <meta name="theme-color" content="#f7f1e3" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Scheherazade+New:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Apply the saved theme before first paint to avoid a flash. -->
+  <script>
+    try {
+      const s = JSON.parse(localStorage.getItem("asmaul-husna:v1") || "{}").settings || {};
+      if (s.theme === "light" || s.theme === "dark") document.documentElement.dataset.theme = s.theme;
+      if (s.font) document.documentElement.dataset.font = s.font;
+    } catch {}
+  </script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">মূল অংশে যান</a>
+
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="আসমাউল হুসনা — হোম">
+      <img src="icon.svg" alt="" width="32" height="32" />
+      <span>আসমাউল হুসনা</span>
+    </a>
+    <nav id="nav" class="nav" aria-label="প্রধান">
+      <a href="#/" data-nav="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>হোম</span></a>
+      <a href="#/learn" data-nav="learn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg><span>শিখুন</span></a>
+      <a href="#/review" data-nav="review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"/></svg><span>পুনরাবৃত্তি</span><span class="badge" hidden></span></a>
+      <a href="#/names" data-nav="names"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg><span>সব নাম</span></a>
+      <a href="#/settings" data-nav="settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg><span>সেটিংস</span></a>
+    </nav>
+    <button id="theme-toggle" class="icon-btn" type="button" aria-label="থিম বদলান"></button>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <noscript><p class="panel">এই ওয়েবসাইট চালাতে JavaScript চালু করুন।</p></noscript>
+  </main>
+
+  <footer class="footer">
+    <p>
+      <a href="#/about">সম্পর্কে</a> ·
+      <a href="#/about#pronunciation">উচ্চারণ নির্দেশিকা</a> ·
+      <a href="https://github.com/mrayhanulmasud/learn-AlAsmaulHusna" rel="noopener">সোর্স কোড</a>
+    </p>
+  </footer>
+
+  <dialog id="dialog" aria-label="নামের বিস্তারিত"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
