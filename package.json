@@ -1,0 +1,13 @@
+{
+  "name": "learn-asmaul-husna",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website to memorize the 99 Beautiful Names of Allah — 3 new names a day with flashcards, quizzes and spaced repetition.",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "node --test tests/*.test.mjs",
+    "docs": "node scripts/build-docs.mjs"
+  },
+  "license": "Apache-2.0"
+}
